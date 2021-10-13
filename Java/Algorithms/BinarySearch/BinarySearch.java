@@ -23,6 +23,10 @@ public class BinarySearch{
 	}
 
 	static int binarySearch(int[] sortedArr,int target){
+		
+	//add check for if array is null or size of array is 0
+		if(sortedArr==null || sortedArr.length==0) return -1;
+		
 		int start = 0;
 		int end = sortedArr.length-1;
 		// int mid = start+end /2;
@@ -46,6 +50,9 @@ public class BinarySearch{
 	
 	//write binarysearch for desccending order
 	static int descendingBinarySearch(int[] arr,int target){
+		//add check if array is null or size of array is 0
+		if(sortedArr==null || sortedArr.length==0) return -1;
+		
 		int start = 0;
 		int end = arr.length-1;
 
